@@ -428,11 +428,11 @@ afs_join <- st_join(afs_sf,   acs_data["GEOID"],
 
 # banks
 banks_join <- st_join(banks_sf, acs_data["GEOID"],
-                      join = st_within)                                           # spatial join
+                      join = st_within)                                         # spatial join
 
 # credit unions
 cu_join <- st_join(cu_sf,    acs_data["GEOID"],
-                   join = st_within)                                           # spatial join
+                   join = st_within)                                            # spatial join
 
 
 # count establishments: drop geometry and count each category per tract, based on GEOID
